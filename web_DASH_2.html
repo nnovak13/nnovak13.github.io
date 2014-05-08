@@ -3,7 +3,6 @@
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>	
 
-
 <style>
 
 header {
@@ -208,7 +207,7 @@ Phone: 774-571-9477
 
     <img class= "image-hidden" src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG"alt="" />
 
-    <img class= "image-hidden" src="hhttps://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG"alt="" />
+    <img class= "image-hidden" src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG"alt="" />
 
  </div>
 
@@ -220,27 +219,17 @@ Phone: 774-571-9477
 
 $(document).ready(function() {
 
-	$(".nextLink").on("click", function (e){
+	
 
-			var currentActiveImage = $(".image-shown");
-			var nextActiveImage = currentActiveImage.next ();
+	$("nextPic").click(function()
+	{
+		nextPic();
+	});
 
-			currentActiveImage.removeclass("image-shown").addClass("image-hidden")
-			.css("z-index", -10);
 
-			nextActiveImage.addClass("image-shown").removeclass("image-hidden")
-			.css("z-index", 20);
+nextPic();
 
-			$(".carousel-inner img").not([currentActiveImage, nextActiveImage]).css("z-index", 1)
-			
 
-			e.preventDefault();
-
-	}
-
-		);
-
-alert()
 
 }	) ;
 
