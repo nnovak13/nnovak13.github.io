@@ -104,6 +104,38 @@ p {
 	text-align: center;
 	position: relative;
 }
+
+
+.image-shown {
+	display: inline-block;
+}
+
+.image-hidden {
+	display: none;
+
+}
+
+.carousel-outer {
+	text-align: center;
+}
+
+.carousel-inner {
+	text-align: center;
+	 }
+
+.previousPic, .nextPic {
+	float:center;
+	margin: 100px;
+	margin-bottom: -100px
+	padding: 200px;
+	color: white;
+	font-family: 'Poiret One', cursive;
+	font-size: 30px;
+	border: 20px none ;
+
+}
+
+
 </style>
 </head>
 
@@ -168,20 +200,50 @@ Phone: 774-571-9477
 <h2>Image Carousel</h2>
 
   <div class="carousel-outer">
-    <a href="#">Previous</a>
+    <a class= "previousPic" href="#">Previous</a>
 
       <div class="carousel-inner">
-    <img src ="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/bridge.JPG" alt="" />,
-    <img src= "https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/sunset.JPG"alt="" />,
-    <img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG"alt="" />
+    <img class="image-shown" src ="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/bridge.JPG" alt="" />
+
+    <img class= "image-hidden" src= "https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/sunset.JPG"alt="" />
+
+    <img class= "image-hidden" src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG"alt="" />
+
+    <img class= "image-hidden" src="hhttps://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG"alt="" />
 
  </div>
 
-    <a href="#">Next</a>
+    <a class="nextPic" href="#">Next</a>
     
   </div>
 
 <script>
+
+$(document).ready(function() {
+
+	$(".nextLink").on("click", function (e){
+
+			var currentActiveImage = $(".image-shown");
+			var nextActiveImage = currentActiveImage.next ();
+
+			currentActiveImage.removeclass("image-shown").addClass("image-hidden")
+			.css("z-index", -10);
+
+			nextActiveImage.addClass("image-shown").removeclass("image-hidden")
+			.css("z-index", 20);
+
+			$(".carousel-inner img").not([currentActiveImage, nextActiveImage]).css("z-index", 1)
+			
+
+			e.preventDefault();
+
+	}
+
+		);
+
+
+
+}	) ;
 
 </script>
  
