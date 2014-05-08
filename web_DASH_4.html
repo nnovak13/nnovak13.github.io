@@ -115,9 +115,11 @@ p {
 
 }
 
-.first-picture
 
+.carousel-inner {
+	margin: 0 auto;
 }
+	
 
 
 </style>
@@ -186,21 +188,24 @@ Phone: 774-571-9477
 
 <h2>
     <ul>
-      <li><a href="#first-picture">Picture #1</a></li>
-      <li><a href= "#second-picture">Picture #2</a></li>
-      <li><a href="#third-picture">Picture #3</a></li>
-      <li><a href="#fourth-picture">Picture #4</a></li>
+     
+      <li><a href= "#second-picture">Picture #1</a></li>
+      <li><a href="#third-picture">Picture #2</a></li>
+      <li><a href="#fourth-picture">Picture #3</a></li>
      </ul>
   </h2>
 
       <div class="carousel-inner">
-    <img name="first-picture" src ="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/bridge.JPG" alt="" />
+    
 
-    <img name="second-picture" src= "https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/sunset.JPG"alt="" />
+    <a name="second-picture"</a> 
+    	<img src= "https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/sunset.JPG" alt="" />
 
-    <img name= "third-picture" src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG"alt="" />
+    <a name= "third-picture"</a> 
+    	<img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG"alt="" />
 
-    <img name= "fourth-picture" src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG"alt="" />
+    <a name= "fourth-picture"</a> 
+    	<img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG"alt="" />
 
  </div>
 
@@ -210,10 +215,8 @@ Phone: 774-571-9477
 
 <script>
 
-$(document).ready(function() {
-
-
-	$(".first-picture")
+$('button').click(function()
+	
 
 
 
