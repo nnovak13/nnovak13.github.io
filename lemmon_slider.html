@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>	
+
+<script src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/jquery-uncomp.js"></script>
+
+<style>
+
+header {
+	text-align: center;
+	font-size: 75px;
+	font-family: 'Poiret One', cursive;
+  	background: url("https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG");
+        background-size: cover;
+        color: rgba(215, 40, 40, 0.9);
+        align-items: center;
+}
+
+h1 {
+
+	text-align: center;
+	
+	margin: 300px 0px 0px 0px 0px;
+	padding: 100px 25px 0px 0px;
+	font-size: 75px;
+	font-family: 'Poiret One', cursive;
+	padding: 700px 0px 10px 0px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Rock Salt', cursive;
+	color: rgba(215, 40, 40, 0.9);
+	
+	
+}
+
+
+h3 {
+	
+	font-size: 20px;
+	font-family: 'Rock Salt', cursive;
+	color: rgba(215, 40, 40, 0.9);
+	
+}
+
+h4 {
+	font-size: 20px;
+	font-family: 'Rock Salt', cursive;
+	color: rgba(215, 40, 40, 0.9);
+	padding: 0px 10px 10px 75px;
+}
+a {
+	color: white;
+}
+
+body {
+
+  margin: 0 auto;
+  background-color: rgba(61, 128, 73, 0.9);
+}
+
+img {
+      
+      border: 10px solid black gray;
+      border-radius: 40px;
+      border-style:inset;
+      border-width: 20px;
+      max-width: 400px;
+     
+    }
+    
+ul {
+      padding: 10px;
+      background-color: rgba(203, 102, 100, 0.5);
+      
+    }
+
+li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      color: white;
+    }
+
+p {
+	text-align: center;
+	color: white;
+
+	padding: 10px;
+	font-size: 30px;
+	font-family: 'Poiret One', cursive;
+	
+	
+}
+
+.bridge {
+	background: url("https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG") no repeat top right;
+	float: right;
+	}
+	
+.title {
+	text-align: center;
+	position: relative;
+}
+
+
+.slider    { 
+	overflow:hidden; position:relative; 
+}
+.slider ul { 
+	margin:0; 
+	padding:0; 
+}
+.slider li { float:left;
+ margin:0 5px 0 0; 
+ list-style:none; 
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="bridge">
+  <img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nyc.JPG">
+  <h3>Summer in NYC</h3>
+  </div>
+	
+<div class="title">
+<h1>ABOUT ME</h1>
+<h2>By Nick Novak</h2>
+</div>
+   
+    <img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/nick.jpg">
+
+  
+  
+
+  <h2>
+    <ul>
+      <li><a href="#A1">About Me</a></li>
+      <li><a href="#B2">Experience</a></li>
+      <li><a href="#C3">Contact Info</a></li>
+     </ul>
+  </h2>
+
+</header>
+</body>
+
+ 
+<p>
+
+
+</p>
+
+
+<h2><a name="A1">About Me</a></h2>
+<p>
+I am a recent graduate from Fordham University. <br />
+I am from Franklin, MA. I am interested in technology, music, and film.
+</p>
+
+<h2><a name="B2">Experience</a></h2>
+<p>
+	My background is in tech, economics, and history. <br />
+	I haveve been lucky enough to have a background in IT, <br />
+	and have worked in job roles that have stressed <br />
+	quantitative and qualitative research and analysis. <br />
+	As a recent graduate, I am thrilled at the opportunity <br>
+	to learn and apply Web Development to my future endeavors.
+</p>
+
+<h2><a name="C3">Contact Info</a></h2>
+<p>
+Email: nnovak@fordham.edu <br />
+Phone: 774-571-9477
+</p>
+
+<h2>Image Carousel</h2>
+
+  <div id="slider1" class="slider">
+    <ul>
+        <li><img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/bridge.JPG" alt=""></li>
+        <li><img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/ocean.JPG" alt=""></li>
+        <li><img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/sunset.JPG" alt=""></li>
+        
+    </ul>
+</div>
+
+<div class="controls">
+    <a href="#" class="prev-page">Prev Page</a> |
+    <a href="#" class="prev-slide">Prev Slide</a> |
+    <a href="#" class="next-slide">Next Slide</a> |
+    <a href="#" class="next-page">Prev Page</a>
+</div>
+  <button>Next</button>
+  
+  <script>
+  	
+  window.onload = function(){
+	
+	$( '#slider1' ).lemmonSlider();
+
+}
+
+$( '#slider4' ).lemmonSlider({
+
+    'infinite' : true
+
+});	
+  	
+  </script>
+
+<img src="https://raw.githubusercontent.com/nnovak13/nnovak13.github.io/master/github%20pictures/fireworks.JPG">
+	<h4>4th of July in Florida</h4>
+	
+</body>
+</html>
